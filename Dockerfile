@@ -1,4 +1,5 @@
 ARG RVM_RUBY_VERSIONS="2.2.6"
+ARG RVM_USER=root
 FROM msati/docker-rvm
 USER ${RVM_USER}
 ENV RUBY=2.2.6
