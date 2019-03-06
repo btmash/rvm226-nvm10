@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update -q \
-    && apt install -qy curl ca-certificates gnupg2 build-essential --no-install-recommends \
+    && apt install -qy curl ca-certificates gnupg2 build-essential --no-install-recommends rsync openssh-client git postgresql-client libpq-dev tzdata \
     && apt-get clean
 
 RUN apt install -qy software-properties-common
